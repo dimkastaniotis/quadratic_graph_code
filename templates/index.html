@@ -19,7 +19,7 @@
         <label for="c">c:</label>
         <input type="number" step="0.1" id="c" name="c" value="0"><br><br>
 
-        <button type="submit">Δημιουργία Γραφήματος</button>
+        <button type="submit" class="green-button">Δημιουργία Γραφήματος</button>
     </form>
 
     {% if error %}
@@ -31,10 +31,10 @@
         <img src="{{ url_for('static', filename='graph.png') }}" alt="Γραφική Παράσταση">
     {% endif %}
 
-    <button onclick="location.href='{{ url_for('view_code') }}'" type="button">Προβολή Κώδικα</button>
+    <button onclick="location.href='{{ url_for('view_code') }}'" type="button" class="red-button">Προβολή Κώδικα</button>
 
     <footer>
-        <p>© 2025 Δημήτρης Καστανιώτης</p>
+        <p>© 2024 Application</p>
     </footer>
 </body>
 </html>
