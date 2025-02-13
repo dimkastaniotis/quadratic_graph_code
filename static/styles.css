@@ -24,17 +24,40 @@ input[type="number"] {
     width: 100px;
 }
 
-button {
-    background-color: #4CAF50;
+.green-button {
+    background-color: transparent;
+    border: 2px solid green;
     color: white;
     padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #3e8e41;
+.green-button:hover {
+    background-color: green;
+    color: black;
+}
+
+.red-button {
+    background-color: transparent;
+    border: 2px solid red;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.red-button:hover {
+    background-color: red;
+    color: black;
 }
 
 img {
@@ -54,21 +77,4 @@ footer {
     margin-top: 30px;
     font-size: 0.8em;
     color: #777;
-}
-button {
-    background-color: transparent; /* Κάνει το background διαφανές */
-    border: 2px solid red; /* Κόκκινο πλαίσιο */
-    color: white; /* Άσπρα γράμματα */
-    padding: 10px 20px; /* Padding για να μεγαλώσει το κουμπί */
-    text-align: center;
-    text-decoration: none; /* Αφαιρεί την υπογράμμιση (αν υπάρχει) */
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px; /* Στρογγυλεμένες γωνίες */
-}
-
-button:hover {
-    background-color: red; /* Κόκκινο background στο hover */
-    color: black; /* Μαύρα γράμματα στο hover */
 }
