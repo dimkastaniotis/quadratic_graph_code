@@ -31,7 +31,7 @@
         <img src="{{ url_for('static', filename='graph.png') }}" alt="Γραφική Παράσταση">
     {% endif %}
 
-    <a href="{{ url_for('view_code') }}">Προβολή Κώδικα</a>  <!-- Αυτή είναι η γραμμή που πρόσθεσα -->
+    <button onclick="location.href='{{ url_for('view_code') }}'" type="button">Προβολή Κώδικα</button>
 
     <footer>
         <p>© 2024 Application</p>
