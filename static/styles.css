@@ -25,9 +25,9 @@ input[type="number"] {
 }
 
 .green-button {
-    background-color: transparent;
+    background-color: lightgreen; /* Ανοιχτό πράσινο background */
     border: 2px solid green;
-    color: white;
+    color: black; /* Μαύρα γράμματα */
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -39,13 +39,13 @@ input[type="number"] {
 
 .green-button:hover {
     background-color: green;
-    color: black;
+    color: white;
 }
 
 .red-button {
-    background-color: transparent;
+    background-color: lightcoral; /* Ανοιχτό κόκκινο background */
     border: 2px solid red;
-    color: white;
+    color: black; /* Μαύρα γράμματα */
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -57,7 +57,7 @@ input[type="number"] {
 
 .red-button:hover {
     background-color: red;
-    color: black;
+    color: white;
 }
 
 img {
