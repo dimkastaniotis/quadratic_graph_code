@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Γραφική Παράσταση Παραβολής</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Γραφική Παράσταση Παραβολής y = ax² + bx + c</h1>
+
+    <form method="post">
+        <label for="a">a:</label>
+        <input type="number" step="0.1" id="a" name="a" value="1"><br><br>
+
+        <label for="b">b:</label>
+        <input type="number" step="0.1" id="b" name="b" value="0"><br><br>
+
+        <label for="c">c:</label>
+        <input type="number" step="0.1" id="c" name="c" value="0"><br><br>
+
+        <button type="submit">Δημιουργία Γραφήματος</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if graph_url %}
+        <h2>Γράφημα:</h2>
+        <img src="{{ url_for('static', filename='graph.png') }}" alt="Γραφική Παράσταση">
+    {% endif %}
+
+    <footer>
+        <p>© 2025 DIMITRIS KASTANIOTHS</p>
+    </footer>
+</body>
+</html>
